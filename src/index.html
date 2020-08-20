@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://bootswatch.com/4/lux/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.0.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <title>Aplicacion del clima</title>
+</head>
+<body>
+    
+<div class="container p-4 animate__animated animate__fadeInLeft animate__delay-1s">
+    <div class="row">
+        <div class="col-md-4 mx-auto text-center">
+            <div class="card">
+                <div class="card-body">
+                    <h1 id="weather-location" class="h3 animate__animated animate__rotateInDownLeft animate__delay-2s"></h1>
+                    <h3 id="weather-description" class="h4 animate__animated animate__rotateInDownLeft animate__delay-2s"></h3>
+                    <h3 class="h3 animate__animated animate__rotateInDownLeft animate__delay-2s" id="weather-string" ></h3>
+                    
+                    <ul class="list-group mt-3 animate__animated animate__rotateInDownLeft animate__delay-2s">
+                        <li id="weather-humidity" class="list-group-item"></li>
+                        <li id="weather-wind" class="list-group-item"></li>
+                        
+                    </ul>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    <form id="w-form">
+                        <div class="form-group animate__animated animate__fadeInUp animate__delay-3s">
+                            <input type="text" id="city" class="form-control" placeholder="Ciudad" autofocus>
+                            <input type="text" id="city" class="form-control">
+                        </div>
+                        <div class="form-group animate__animated animate__fadeInUp animate__delay-3s">
+                            <input type="text" id="countryCode" class="form-control">
+                        </div>
+                        <div class="form-group animate__animated animate__fadeInUp animate__delay-3s">
+                            <button class="btn btn-dark btn-block" id="w-change-btn">
+                                Obtener Clima
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer>Marinovn2020</footer>
+</body>
+</html>
